@@ -1,3 +1,18 @@
+
+<?php
+
+
+    		$nome = (isset($_POST['exsampleImputEmail1'];)) ? $_POST['exampleInputEmail1'] : '';
+ 					   
+
+            print $nome;
+
+?>    
+
+
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,14 +27,14 @@
   </head>
   <body>
     <div class="container">
-  <form>
+  <form action="index.php" method="post">
   <div class="form-group">
     <label for="exampleInputEmail1">Nome</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserisci nome">
+    <input type="email" name="exampleInputEmail1" class="form-control" id="exampleInputEmail1" aria-describedby="nomeHelp" placeholder="Inserisci nome">
   </div>
    <div class="form-group">
     <label for="exampleInputEmail1">Cognome</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserisci cognome">
+    <input type="email" name="exampleInputEmail1" class="form-control" id="exampleInputEmail1" aria-describedby="cognomeHelp" placeholder="Inserisci cognome">
     
   </div>
   
@@ -28,9 +43,12 @@
     <label for="exampleFormControlTextarea1">Indirizzo</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
+   <small id="emailHelp" class="form-text text-muted">Deve contenere la via, il numero civico e il cap</small>
   <button type="submit" class="btn btn-primary">Invia</button>
+ 
 </form>
     </div>
+    
 
 
     <!-- Optional JavaScript -->
