@@ -2,7 +2,7 @@
 <?php
 
 
-    		$nome = (isset($_POST['exsampleImputEmail1'];)) ? $_POST['exampleInputEmail1'] : '';
+    		$nome = (isset($_POST["exampleInputEmail1"])) ? $_POST["exampleInputEmail1"] : "";
  					   
 
             print $nome;
@@ -26,6 +26,18 @@
     <title>Hello, world!</title>
   </head>
   <body>
+  	<div class="container">
+  		<div class="alert alert-primary" role="alert">
+  			<?php
+  			print $nome . "<br>";
+  			print $cognome . "<br>";
+  			print $indirizzo . "<br>";
+  			?>
+  	
+
+
+
+
     <div class="container">
   <form action="index.php" method="post">
   <div class="form-group">
